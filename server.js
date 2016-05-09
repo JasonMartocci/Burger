@@ -19,13 +19,6 @@ app.get('/', function(req,res) {
 
     connection.query('SELECT * FROM burgers;', function(err, data) {
       if (err) throw err;
-
-      //test it
-      //console.log('The solution is: ', data);
-
-      //test it
-      //res.send(data);
-
       res.render('index', {burgers : data});
     });
 });
@@ -35,7 +28,7 @@ app.get('/', function(req,res) {
 //post route -> back to home
 app.post('/create', function(req, res) {
 
-    connection.query('INSERT INTO burgers (burger_name, devoured) VALUES (?)', [req.body.burger_name] [req.body.devoured], function(err, result) {
+    connection.query('INSERT INTO burgers (burger_name, devoured) VALUES (?, ?)', [req.body.burger_name], [req.body.devoured], function(err, result) {
       if (err) throw err;
 
       res.redirect('/');
