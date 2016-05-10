@@ -1,3 +1,22 @@
+body{
+	font-family: verdana;
+}
+.header{
+	background-image: url(/assets/images/bk_bg.jpg);
+}
+.container{
+	width:80%;
+	margin: 0 auto;
+}
+.notDevoured{
+	float: left;
+	width:50%;
+}
+.devoured{
+	float: right;
+	width:50%;
+}
+
 li {
   background: #FAEBD7;
   margin: 5px;
@@ -9,8 +28,7 @@ li {
 }
 
 .create-update-form {
-  background: aqua;
-  margin: 5px;
+  background: #FFFFFF;
   padding: 5px;
 }
 
