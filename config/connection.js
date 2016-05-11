@@ -5,14 +5,14 @@ var mysql = require('mysql');
 var connection;
 
 if (process.env.JAWSDB_URL){
-    connection = mysql.creatConnection(process.env.JAWSDB_URL);
+    connection = mysql.createConnection(process.env.JAWSDB_URL);
 } else {
-    connection= mysql.creatConnection({
-        host: 'localhost',
-        user: 'root',
-        password: 'hacktheplanet',
-        database: 'todoagain_db',
-    })
+    connection = mysql.createConnection({
+        host: 'l9dwvv6j64hlhpul.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
+        user: 'ub54aebuuk82ex6v',
+        password: 'ozawdqjfz6zrtjwc',
+        database: 'wvmi1gdy2pdcftqh',
+    });
 }
 
 connection.connect(function(err) {
