@@ -1,14 +1,14 @@
-// var Sequelize = require('sequelize'), connection;
+var Sequelize = require('sequelize'), connection;
 
-// if (process.env.JAWSDB_URL){
-// 	connection = new Sequelize(process.env.JAWSDB_URL);
-// }else {
-//     connection = new Sequelize('wvmi1gdy2pdcftqh', 'root', 'password', {
-//         host: 'l9dwvv6j64hlhpul.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
-//         dialect: 'mysql',
-//         port: '3306'
-//     });
-// }
+if (process.env.JAWSDB_URL){
+	connection = new Sequelize(process.env.JAWSDB_URL);
+}else {
+    connection = new Sequelize('wvmi1gdy2pdcftqh', 'root', 'ozawdqjfz6zrtjwc', {
+        host: 'l9dwvv6j64hlhpul.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
+        dialect: 'mysql',
+        port: '3306'
+    });
+}
 
 var express = require('express');
 var bodyParser = require('body-parser');
